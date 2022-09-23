@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="./C:\Users\S-IT\Desktop\Harsha\Bootstrap\yga.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .home-pg {
+            height: 700px;
+            width: 100%;
+            background: url(./Images/home\ page.webp);
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+        }
+
+        .home-pg .grad {
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(rgba(138, 138, 138, 0.336), rgba(252, 143, 143, 0.253));
+        }
+
+        .home-pg .grad .hero {
+            height: 100%;
+            width: 100%;
+        }
+
+        .home-pg .grad .btn {
+            background-color: palevioletred;
+        }
+
+        #about {
+            height: 100%;
+            width: 100%;
+            background: url(./Images/xintro.jpg.pagespeed.ic.LHSssDqC6u.webp);
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+        }
+
+        #about .why-yoga li {
+            color: palevioletred;
+            list-style: none;
+        }
+
+        #card {
+            height: 100%;
+            margin: 100px 0;
+            padding: 100px 0;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        .card {
+            height: 100%;
+            border: none;
+            background-color: whitesmoke;
+        }
+
+        .card-img,
+        .card-img-top {
+            height: 150px;
+            width: 150px;
+            background-color: whitesmoke;
+        }
+
+        #img-hover {
+            height: 100%;
+            width: 100%;
+        }
+
+        #img-hover .group {
+            height: 50%;
+        }
+
+        #img-hover .group .pics {
+            height: 320px;
+            width: 320px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .row {
+            --bs-gutter-x: 0rem !important;
+        }
+
+        #img-hover .group .pics .img-fluid {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .group .pics:hover .img-fluid {
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        #img-hover .yoga {
+            height: 50%;
+            width: 100%;
+        }
+
+        #img-hover .yoga .pics {
+            height: 320px;
+            width: 320px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .yoga .pics .img-fluid {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .pics .img-fluid h1 {
+            z-index: 10;
+        }
+
+        #img-hover .yoga .pics:hover .img-fluid {
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        #img-hover .pics .txt {
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(70, 128, 62, 0.568);
+        }
+
+        #tables {
+            height: 100%;
+            width: 100%;
+            background-color: whitesmoke;
+            padding: 100px 0 !important;
+        }
+
+        #tables .features {
+            height: 100%;
+            width: 100%;
+        }
+
+        #tables .features .year {
+            height: 100%;
+        }
+
+        #tables .features .year .dolar {
+            color: rgb(210, 145, 188);
+        }
+
+        #tables .features .year .btn {
+            background-color: rgb(210, 145, 188);
+            color: white;
+            border-radius: 0;
+        }
+
+        #test {
+            height: 100%;
+            width: 100%;
+        }
+
+        #test .carousel {
+            height: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.452), rgba(210, 145, 188, 0.582));
+        }
+
+        #test .carousel-inner .behind-ct .behind .consonantia {
+            height: 100%;
+            width: 100%;
+        }
+
+        #happy {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.452), rgba(210, 145, 188, 0.582)), url(./Images/xbg_3.jpg.pagespeed.ic.Gkx7pjTgLA.webp);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        #happy .workshop {
+            height: 100%;
+            width: 100%;
+        }
+
+        #blog {
+            height: 100%;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        #blog .women {
+            height: 100%;
+            width: 100%;
+        }
+
+        #blog .women .card {
+            --bs-gutter-x: 0rem !important;
+        }
+
+        #blog .women .card .card-body .cal .date {
+            color: rgb(236, 110, 131);
+        }
+
+        #blog .women .card img {
+            height: auto;
+            width: 100%;
+        }
+
+        #see {
+            height: 100%;
+            width: 100%;
+        }
+
+        #see .gall {
+            height: 100%;
+            width: 100%;
+        }
+
+        #see .gall .gallery {
+            height: 230px;
+            --bs-gutter-x: 0rem !important;
+        }
+
+        #see .gall .gallery .gall-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .fake {
+            height: 100%;
+            width: 100%;
+            padding: 100px 0;
+            background-color: rgb(210, 145, 188);
+        }
+
+        .fake .fake-cnt {
+            height: 100%;
+            width: 100%;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <section>
+
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                    <img src="./Images/logo.gif" height="90" alt="">Yogalax
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CLASSES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">SCHEDULE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ABOUT</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACT</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <section class="home-pg ">
+        <div class="grad">
+            <div class="hero row container text-start justify-content-start align-items-center">
+                <div class="col-md-6">
+                    <h1 class="display-4">Effective Therapy Against Stress.</h1>
+                    <p>Do Yoga today for a better tomorrow</p>
+                    <button class="btn mx-5 my-2 text-light rounded-pill"> free trial</button>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="about" class="row p-5">
+        <div class="col-md-6"></div>
+        <div class="why-yoga col-md-6 ">
+            <h1 class="display-4 my-3 lh-sm">Why You Should Go To Yoga</h1>
+            <p class="lh-lg my-4 text-secondary">Far far away, behind the word mountains, far from the countries Vokalia
+                and
+                Consonantia, there live the
+                blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language
+                ocean.</p>
+
+
+            <li class="fs-3 lh-lg"><i class="fa-solid fa-circle-check m-2"></i>Yoga boosts brain power</li>
+            <li class="fs-3 lh-lg"><i class="fa-solid fa-circle-check m-2"></i>Yoga helps you to breathe better</li>
+            <li class="fs-3 lh-lg"><i class="fa-solid fa-circle-check m-2"></i>Yoga improves your strength</li>
+            <li class="fs-3 lh-lg"><i class="fa-solid fa-circle-check m-2"></i>Yoga helps you to focus</li>
+            <li class="fs-3 lh-lg"><i class="fa-solid fa-circle-check m-2"></i>Yoga helps give meaning to your day</li>
+
+        </div>
+    </section>
+    <section id="card" class="row container-fluid  justify-content-center align-items-center ">
+        <div class="card m-1" style="width: 18rem;">
+            <img src="./Images/images.png" class="card-img-top img-fluid rounded-circle" height="150"
+                alt="...">
+            <div class="card-body">
+                <h1 class="fs-5 fw-bold">Healthy Lifestyle</h1>
+                <p class="card-text text-secondary">A small river named Duden flows by their place and supplies it with
+                    the necessary
+                    regelialia. It is a paradisematic country</p>
+            </div>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+            <img src="./Images/images.jpg" class="card-img-top img-fluid rounded-circle" height="150"
+                alt="...">
+            <div class="card-body">
+                <h1 class="fs-5 fw-bold">Body & Mind Balance</h1>
+                <p class="card-text text-secondary">A small river named Duden flows by their place and supplies it with
+                    the necessary
+                    regelialia. It is a paradisematic country</p>
+            </div>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+            <img src="./Images/43792-yoga-se-hi-hoga.gif" class="card-img-top img-fluid rounded-circle"
+                height="150" alt="...">
+            <div class="card-body">
+                <h1 class="fs-5 fw-bold">Meditation Practice</h1>
+                <p class="card-text text-secondary">A small river named Duden flows by their place and supplies it with
+                    the necessary
+                    regelialia. It is a paradisematic country</p>
+            </div>
+        </div>
+        <div class="card m-1" style="width: 18rem;">
+            <img src="./Images/download.png" class="card-img-top img-fluid rounded-circle" height="150"
+                alt="...">
+
+            <div class="card-body">
+                <h1 class="fs-5 fw-bold">Edeology</h1>
+                <p class="card-text text-secondary">A small river named Duden flows by their place and supplies it with
+                    the necessary
+                    regelialia. It is a paradisematic country</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="yoga-title" class="container text-center">
+        <p>Yoga Classes</p>
+        <h1 class="display-1 mb-5">Choose your level & focus </h1>
+    </section>
+
+    <section id="img-hover" class="container">
+        <div id="lesson" class="group row justify-content-center align-items-center">
+            <div class="pics col-md-3 m-3">
+                <img src="./Images/xprogram-1.jpg.pagespeed.ic.1ci9kbfwxf.webp" class="img-fluid" alt="">
+                <div class="txt text-center text-light d-flex justify-content-center align-items-center flex-column">
+                    <h1>Group Lessons</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regilialia.</p>
+                </div>
+            </div>
+            <div class="pics col-md-3 m-3">
+                <img src="./Images/xprogram-2.jpg.pagespeed.ic.gQnpvFnESP.webp" class="img-fluid" alt="">
+                <div class="txt text-center text-light d-flex justify-content-center align-items-center flex-column">
+                    <h1>Bikram Yoga</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regilialia.</p>
+                </div>
+            </div>
+            <div class="pics col-md-3 m-3">
+                <img src="./Images/xprogram-3.jpg.pagespeed.ic.qlWM0s_6CA.webp" class="img-fluid" alt="">
+                <div class="txt text-center text-light d-flex justify-content-center align-items-center flex-column">
+                    <h1>Yoga Barre</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regilialia.</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="couple" class="yoga row justify-content-center align-items-center">
+            <div class="pics col-md-3 m-3">
+                <img src="./Images/xprogram-4.jpg.pagespeed.ic.hjn8FCoNdJ.webp" class="img-fluid" alt="">
+                <div class="txt text-center text-light d-flex justify-content-center align-items-center flex-column">
+                    <h1>Yoga For Couples</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regilialia.</p>
+                </div>
+            </div>
+            <div class="pics col-md-3 m-3">
+                <img src="./Images/xprogram-5.jpg.pagespeed.ic.IpqOpOTQKX.webp" class="img-fluid" alt="">
+                <div class="txt text-center text-light d-flex justify-content-center align-items-center flex-column">
+                    <h1>Bikram Yoga</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regilialia.</p>
+                </div>
+            </div>
+            <div class="pics col-md-3 m-3">
+                <img src="./Images/xprogram-6.jpg.pagespeed.ic.jjaJOW0fXv.webp" class="img-fluid" alt="">
+                <div class="txt text-center text-light d-flex justify-content-center align-items-center flex-column">
+                    <h1>Yoga Barre</h1>
+                    <p>A small river named Duden flows by their place and supplies it with the necessary regilialia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="tables" class="text-center p-5">
+        <p class="text-secondary fs-5">PRICING TABLES</p>
+        <h1 class="display-2 mb-3"> Membership Cards</h1>
+        <div class="features row justify-content-center align-items-center">
+            <div class="year col-md-3 m-2 bg-light text-center">
+                <h3 class="fs-5 my-4">YEAR CARD</h3>
+                <p class="dolar display-4 my-4 fw-normal"><sup>$</sup>449</p>
+                <h5 class="text-secondary fs-5 my-4">For 1 Year</h5>
+                <h1 class="fs-5 fw-normal my-4">ENJOY ALL THE FEATURES</h1>
+                <P class="text-secondary  lh-lg fw-normal fs-5 my-4">Onetime Access To All Club<br>Group Trainer<br>Book
+                    A Group
+                    Class<br>Fitness Orientation</P>
+                <button class="btn btn-lg fs-4 py-3 px-5">Get Started</button>
+            </div>
+            <div class="year col-md-3 m-2 bg-light text-center">
+                <h3 class="fs-5 my-4">MONTHLY CARD</h3>
+                <p class="dolar display-4 my-4 fw-normal"><sup>$</sup>200</p>
+                <h5 class="text-secondary fs-5 my-4">For 1 Month</h5>
+                <h1 class="fs-5 fw-normal my-4">ENJOY ALL THE FEATURES</h1>
+                <P class="text-secondary  lh-lg fw-normal fs-5 my-4">Group Classes<br>Discuss Fitness Goals<br>Group
+                    Trainer<br>Fitness Orientation</P>
+                <button class="btn btn-lg fs-4 py-3 px-5">Get Started</button>
+            </div>
+            <div class="year col-md-3 m-2 bg-light text-center">
+                <h3 class="fs-5 my-4">WEEKLY CARD</h3>
+                <p class="dolar display-4 my-4 fw-normal"><sup>$</sup>85</p>
+                <h5 class="text-secondary fs-5 my-4">For 1 Week</h5>
+                <h1 class="fs-5 fw-normal my-4">ENJOY ALL THE FEATURES</h1>
+                <P class="text-secondary  lh-lg fw-normal fs-5 my-4">Group Classes<br>Discuss Fitness Goals<br>Group
+                    Trainer<br>Fitness Orientation</P>
+                <button class="btn btn-lg fs-4 py-3 px-5">Get Started</button>
+            </div>
+        </div>
+    </section>
+    <section id="test" class="">
+        <div class="timony py-5 text-center">
+            <p class="text-secondary ">TESTIMONY</p>
+            <h1 class="display-3 ">Successful Stories</h1>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="behind-ct row">
+                        <div class="behind col-md-4 p-5  ">
+                            <p>Far far away, behind the word <br>mountains, far from the<br> countries Vakolia and
+                                <br>Consonantia, there live the<br> blind texts.
+                            </p>
+                            <div class="consonantia row">
+                                <div class="gabby-im col-md-6 py-5"> <img
+                                        src="./Images/xperson_1.jpg.pagespeed.ic.7BucVfLujM.webp"
+                                        class="yoga-pic img-fluid rounded-circle" alt=""></div>
+                                <div class="gabby col-md-6 py-5 ">
+                                    <h1 class=" fs-5 fw-normal">Gabby Smith</h1>
+                                    <p class="text-secondary">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="behind col-md-4 p-5">
+                            <p>Far far away, behind the word <br>mountains, far from the<br> countries Vakolia and
+                                <br>Consonantia, there live the<br> blind texts.
+                            </p>
+                            <div class="consonantia row">
+                                <div class="gabby-im col-md-6 py-5"> <img
+                                        src="./Images/xperson_2.jpg.pagespeed.ic.p2i6uGY3Qk.webp"
+                                        class="yoga-pic img-fluid rounded-circle" alt=""></div>
+                                <div class="gabby col-md-6 py-5 ">
+                                    <h1 class=" fs-5 fw-normal">Gabby Smith</h1>
+                                    <p class="text-secondary">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="behind col-md-4 p-5">
+                            <p>Far far away, behind the word <br>mountains, far from the<br> countries Vakolia and
+                                <br>Consonantia, there live the<br> blind texts.
+                            </p>
+                            <div class="consonantia row">
+                                <div class="gabby-im col-md-6 py-5"> <img
+                                        src="./Images/xperson_3.jpg.pagespeed.ic.5eoN1ii3gV.webp"
+                                        class="yoga-pic img-fluid rounded-circle" alt=""></div>
+                                <div class="gabby col-md-6 py-5 ">
+                                    <h1 class=" fs-5 fw-normal">Gabby Smith</h1>
+                                    <p class="text-secondary">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="behind col-md-4 p-5">
+                            <p>Far far away, behind the word <br>mountains, far from the<br> countries Vakolia and
+                                <br>Consonantia, there live the<br> blind texts.
+                            </p>
+                            <div class="consonantia row">
+                                <div class="gabby-im col-md-6 py-5"> <img
+                                        src="./Images/xperson_4.jpg.pagespeed.ic.pUigYGgAgi.webp"
+                                        class="yoga-pic img-fluid rounded-circle" alt=""></div>
+                                <div class="gabby col-md-6 py-5 ">
+                                    <h1 class=" fs-5 fw-normal">Gabby Smith</h1>
+                                    <p class="text-secondary">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="behind col-md-4 p-5">
+                            <p>Far far away, behind the word <br>mountains, far from the<br> countries Vakolia and
+                                <br>Consonantia, there live the<br> blind texts.
+                            </p>
+                            <div class="consonantia row">
+                                <div class="gabby-im col-md-6 py-5"> <img
+                                        src="./Images/xperson_1.jpg.pagespeed.ic.7BucVfLujM.webp"
+                                        class="yoga-pic img-fluid rounded-circle" alt=""></div>
+                                <div class="gabby col-md-6 py-5 ">
+                                    <h1 class=" fs-5 fw-normal">Gabby Smith</h1>
+                                    <p class="text-secondary">Customer</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <section id="happy" class="worksp p-5 ">
+        <div class="workshop row container justify-content-center align-items-cente py-5">
+            <div class="col-md-3 text-center  my-2">
+                <p class="fs-1 fw-normal">5,000</p>
+                <h5>Happy Customers</h5>
+            </div>
+            <div class="col-md-3  text-center my-2">
+                <p class="fs-1 fw-normal">4,560</p>
+                <h5>Yoga Workshops</h5>
+            </div>
+            <div class="col-md-3  text-center my-2">
+                <p class="fs-1 fw-normal">570</p>
+                <h5>Year Of Experience</h5>
+            </div>
+            <div class="col-md-3  text-center my-2">
+                <p class="fs-1 fw-normal">900</p>
+                <h5>Lesson Conducted</h5>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="blog" class="Post p-5">
+
+        <h5 class="text-center text-secondary fs-3">BLOG</h5>
+        <h1 class="display-3 text-center">Recent Posts</h1>
+        <div class="women row py-5 justify-content-center align-items-center">
+            <div class="card my-1 mx-3" style="width: 18rem;">
+                <img src="./Images/ximage_1.jpg.pagespeed.ic.C3gZKQKhre.webp"
+                    class="card-img-top col-md-3 img-fluid" alt="...">
+                <div class="card-body">
+                    <div class="cal row">
+                        <div class="date col-md-4">
+                            <p class="fs-1 fw-normal">31</p>
+                        </div>
+                        <div class="date col-md-7 text-secondary">
+                            <p class="fs-5">2018<br>December</p>
+                        </div>
+                    </div>
+                    <h4 class="my-3">Young Women Doing Yoga</h4>
+                    <p class="card-text text-secondary fs-5">A small river named Duden flows by their place and supplies
+                        it with the
+                        necessary regilialia.</p>
+                </div>
+            </div>
+            <div class="card my-1 mx-3" style="width: 18rem;">
+                <img src="./Images/ximage_2.jpg.pagespeed.ic.D4V29wnFos.webp"
+                    class="card-img-top col-md-3 img-fluid" alt="...">
+                <div class="card-body">
+                    <div class="cal row">
+                        <div class="date col-md-4">
+                            <p class="fs-1 fw-normal">27</p>
+                        </div>
+                        <div class="date col-md-7 text-secondary">
+                            <p class="fs-5">2018<br>December</p>
+                        </div>
+                    </div>
+                    <h4 class="my-3">Young Women Doing Yoga</h4>
+                    <p class="card-text text-secondary fs-5">A small river named Duden flows by their place and supplies
+                        it with the
+                        necessary regilialia.</p>
+                </div>
+            </div>
+            <div class="card my-1 mx-3" style="width: 18rem;">
+                <img src="./Images/ximage_3.jpg.pagespeed.ic.eVr3zsU0Hu.webp"
+                    class="card-img-top col-md-3 img-fluid" alt="...">
+                <div class="card-body">
+                    <div class="cal row">
+                        <div class="date col-md-4">
+                            <p class="fs-1 fw-normal">25</p>
+                        </div>
+                        <div class="date col-md-7 text-secondary">
+                            <p class="fs-5">2018<br>December</p>
+                        </div>
+                    </div>
+                    <h4 class="my-3">Young Women Doing Yoga</h4>
+                    <p class="card-text text-secondary fs-5">A small river named Duden flows by their place and supplies
+                        it with the
+                        necessary regilialia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="see" class="latest p-5">
+        <p class="text-center text-secondary fs-4">GALLERY</p>
+        <h1 class="text-center display-4">See The Latest Photos</h1>
+        <div class="gall row justify-content-center align-items-center py-5">
+            <div class="gallery col-md-3 bg-secondary m-1">
+                <img src="./Images/xgallery-1.jpg.pagespeed.ic.qGwFQX8rGk.webp" class="gall-img img-fluid"
+                    alt="">
+            </div>
+            <div class="gallery col-md-3 bg-secondary m-1">
+                <img src="./Images/xgallery-2.jpg.pagespeed.ic.5MoahU_N3G.webp" class="gall-img img-fluid"
+                    alt="">
+            </div>
+            <div class="gallery col-md-3 bg-secondary m-1">
+                <img src="./Images/xgallery-3.jpg.pagespeed.ic.EpaoxMuRpX.webp" class="gall-img img-fluid"
+                    alt="">
+            </div>
+            <div class="gallery col-md-3 bg-secondary m-1">
+                <img src="https://images.pexels.com/photos/3823039/pexels-photo-3823039.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="gall-img img-fluid" alt="">
+            </div>
+            <div class="gallery col-md-3 bg-secondary m-1">
+                <img src="https://images.pexels.com/photos/802417/pexels-photo-802417.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="gall-img img-fluid" alt="">
+            </div>
+            <div class="gallery col-md-3 bg-secondary m-1">
+                <img src="https://images.pexels.com/photos/917732/pexels-photo-917732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="gall-img img-fluid" alt="">
+            </div>
+        </div>
+    </section>
+
+    <footer class="fake text-light text-center">
+        <div class="fake-cnt row justify-content-center align-items-center">
+            <div class="col-md-4 foot-lax my-2">
+                <h3 class="display-5">Yogalax</h3>
+            </div>
+            <div class="col-md-5 foot-lax text-start my-3">
+                <p class="fs-4">203 Fake St. Mountain View, San Francisco, California, USA</p>
+            </div>
+            <div class="col-md-3 foot-lax justify-content-evenly my-3">
+                <i class="fa-brands mx-3 fa-square-twitter fs-1"></i>
+                <i class="fa-brands mx-3 fa-facebook fs-1"></i>
+                <i class="fa-brands mx-3 fa-square-instagram fs-1"></i>
+            </div>
+            <p class="mt-5 text-secondary fs-5">Copyright ©2022 All rights reserved | This template is made with <i
+                    class="fa-solid fa-heart"></i> by
+                Colorlib</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
