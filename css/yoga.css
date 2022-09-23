@@ -1,0 +1,238 @@
+.home-pg {
+    height: 700px;
+            width: 100%;
+            background: url(../images/home\ page.webp);
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+        }
+
+        .home-pg .grad {
+            width: 70%;
+            height: 100%;
+            background: linear-gradient(rgba(138, 138, 138, 0.336), rgba(252, 143, 143, 0.253));
+        }
+
+        .home-pg .grad .hero {
+            height: 100%;
+            width: 100%;
+        }
+
+        .home-pg .grad .btn {
+            background-color: palevioletred;
+        }
+
+        #about {
+            height: 100%;
+            width: 100%;
+            background: url(../images/xintro.jpg.pagespeed.ic.LHSssDqC6u.webp);
+            background-size: cover;
+            object-fit: cover;
+            background-position: center;
+        }
+
+        #about .why-yoga li {
+            color: palevioletred;
+            list-style: none;
+        }
+
+        #card {
+            height: 100%;
+            margin: 100px 0;
+            padding: 100px 0;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        .card {
+            height: 100%;
+            border: none;
+            background-color: whitesmoke;
+        }
+
+        .card-img,
+        .card-img-top {
+            height: 150px;
+            width: 150px;
+            background-color: whitesmoke;
+        }
+
+        #img-hover {
+            height: 100%;
+            width: 100%;
+        }
+
+        #img-hover .group {
+            height: 50%;
+        }
+
+        #img-hover .group .pics {
+            height: 320px;
+            width: 320px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .row {
+            --bs-gutter-x: 0rem !important;
+        }
+
+        #img-hover .group .pics .img-fluid {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .group .pics:hover .img-fluid {
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        #img-hover .yoga {
+            height: 50%;
+            width: 100%;
+        }
+
+        #img-hover .yoga .pics {
+            height: 320px;
+            width: 320px;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .yoga .pics .img-fluid {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        #img-hover .pics .img-fluid h1 {
+            z-index: 10;
+        }
+
+        #img-hover .yoga .pics:hover .img-fluid {
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        #img-hover .pics .txt {
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(70, 128, 62, 0.568);
+        }
+
+        #tables {
+            height: 100%;
+            width: 100%;
+            background-color: whitesmoke;
+            padding: 100px 0 !important;
+        }
+
+        #tables .features {
+            height: 100%;
+            width: 100%;
+        }
+
+        #tables .features .year {
+            height: 100%;
+        }
+
+        #tables .features .year .dolar {
+            color: rgb(210, 145, 188);
+        }
+
+        #tables .features .year .btn {
+            background-color: rgb(210, 145, 188);
+            color: white;
+            border-radius: 0;
+        }
+
+        #test {
+            height: 100%;
+            width: 100%;
+        }
+
+        #test .carousel {
+            height: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.452), rgba(210, 145, 188, 0.582));
+        }
+
+        #test .carousel-inner .behind-ct .behind .consonantia {
+            height: 100%;
+            width: 100%;
+        }
+
+        #happy {
+            height: 100%;
+            width: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0.452), rgba(210, 145, 188, 0.582)), url(./Images/xbg_3.jpg.pagespeed.ic.Gkx7pjTgLA.webp);
+            background-position: center;
+            background-size: cover;
+            object-fit: cover;
+        }
+
+        #happy .workshop {
+            height: 100%;
+            width: 100%;
+        }
+
+        #blog {
+            height: 100%;
+            width: 100%;
+            background-color: whitesmoke;
+        }
+
+        #blog .women {
+            height: 100%;
+            width: 100%;
+        }
+
+        #blog .women .card {
+            --bs-gutter-x: 0rem !important;
+        }
+
+        #blog .women .card .card-body .cal .date {
+            color: rgb(236, 110, 131);
+        }
+
+        #blog .women .card img {
+            height: auto;
+            width: 100%;
+        }
+
+        #see {
+            height: 100%;
+            width: 100%;
+        }
+
+        #see .gall {
+            height: 100%;
+            width: 100%;
+        }
+
+        #see .gall .gallery {
+            height: 230px;
+            --bs-gutter-x: 0rem !important;
+        }
+
+        #see .gall .gallery .gall-img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .fake {
+            height: 100%;
+            width: 100%;
+            padding: 100px 0;
+            background-color: rgb(210, 145, 188);
+        }
+
+        .fake .fake-cnt {
+            height: 100%;
+            width: 100%;
+        }
